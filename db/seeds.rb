@@ -31,7 +31,7 @@ restaurants_attributes = [
     name:         'Ato Ramen',
     address:      'Off Piotrkowska, Lodz, Poland',
     phone_number:  '48 606 583 892',
-    category: 'japanese',
+    category: 'japanese'
   }
 ]
 Restaurant.create!(restaurants_attributes)

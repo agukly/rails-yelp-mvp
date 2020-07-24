@@ -1,3 +1,32 @@
-// Place all the styles related to the Restaurants controller here.
-// They will automatically be included in application.css.
-// You can use Sass (SCSS) here: http://sass-lang.com/
+body {
+  background-color: white;
+}
+
+a {
+  text-decoration: none;
+  color: grey;
+}
+a:hover {
+  color:black;
+}
+
+.navbar {
+  background-color: #FFEDDC;
+}
+
+.navbar-brand img {
+  width: 250px;
+}
+
+.container {
+  width: 500px;
+}
+.card {
+  border-radius: 20px;
+  align-items: center;
+}
+
+.card img {
+  width: 40px;
+  padding-left: 5px;
+}
