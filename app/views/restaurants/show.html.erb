@@ -1,15 +1,27 @@
 <div class="container">
   <div class="row vh-100">
     <div class="col-md-6 m-auto mt-3">
-      <div class="card">
+      <div class="card shadow">
         <div class="card-body">
           <h5 class="card-title"><%= @restaurant.name %> - <%= @restaurant.category %></h5>
           <h6 class="card-subtitle mb-2 text-muted"><%= @restaurant.address %></h6>
           <p class="card-text"><%= @restaurant.phone_number %></p>
-          <p class="card-text"><%= @review %></p>
+          <hr>
+          <p class="card-text"><% if @restaurant.reviews.present? %>
+          <h6><strong>Newest review:</strong></h6>
+              "<%= @restaurant.reviews.last.content %>" / score: <%= @restaurant.reviews.last.rating %>
+            <% end %>
+          </p>
           <%= link_to 'Write a review', new_restaurant_review_path(@restaurant), class: "card-link" %>
         </div>
       </div>
+      <%= link_to restaurants_path do %>
+        <div class="d-flex align-items-center mt-3 justify-content-end">
+          <i class="fas fa-undo-alt pr-2 text-primary"></i>
+          <span>Go back</span>
+        </div>
+      <% end %>
     </div>
   </div>
 </div>
+
