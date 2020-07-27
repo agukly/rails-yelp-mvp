@@ -1,24 +1,34 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+# RAILS YELP MVP ![alt text](https://raw.githubusercontent.com/agukly/rails-yelp-mvp/master/app/assets/images/noodle.gif?raw=true)
 
-Things you may want to cover:
+## Background & Objectives
 
-* Ruby version
+- Get familiar with rails(routing,controllers & views)
+- Learn how to separate responsibilities of your program into several sub-methods
 
-* System dependencies
+### Getting Started
 
-* Configuration
+Clone the project to your local machine, run the local server `http://localhost:3000/restaurants`
 
-* Database creation
+`git@github.com:agukly/rails-yelp-mvp.git`
 
-* Database initialization
+### Installing
 
-* How to run the test suite
+- Navigate to cloned folder
+- Run `bundle install`
+- Run `yarn`
+- Run `rails db:migrate`
+- Run `rails db:seed`
+- Now you can run the server through `rails s`
 
-* Services (job queues, cache servers, search engines, etc.)
+### Built With
 
-* Deployment instructions
+- Rails version: 5.2.4.1
+- Ruby version: 2.6.5 (x86_64-darwin19)
+- HTML
+- CSS
+- Bootstrap v4.5.0
+- webpack
+- fontawesome
 
-* ...
